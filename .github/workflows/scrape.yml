@@ -1,0 +1,32 @@
+name: Scheduled Scraping with venv
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          # pipのキャッシュを有効化して高速化
+          cache: "pip"
+
+      - name: Create and setup virtual environment
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install --upgrade pip
+          pip install httpx beautifulsoup4
+
+      - name: Run scraping script
+        run: |
+          source .venv/bin/activate
+          python scrape.py
