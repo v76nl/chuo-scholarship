@@ -51,9 +51,9 @@ def generate_html():
     for item in data:
         name = item.get("name", "名称不明")
         link = item.get("link", "#")
-        value = item.get("value", "-")
+        deadline = item.get("deadline", "-")
         
-        html_content += f'        <li><a href="{link}" target="_blank">{name}</a><span class="value">{value}</span></li>\n'
+        html_content += f'        <li><a href="{link}" target="_blank">{name}</a><br><span class="deadline">{deadline}</span></li>\n'
 
     html_content += """    </ul>
 </body>

@@ -32,13 +32,17 @@ def scrape_all_tables():
             for row in rows:
                 # 名前/リンク側の td
                 td_name = row.select_one("td:nth-child(2)")
-                # 数値/状態側の td (クラス名指定)
+
+                # 募集案内中かどうかの td
                 td_value = row.select_one("td.txtb.txtr.blue03.textcenter.valign_m")
 
-                if td_name and td_value:
+                # 締切日のtd
+                td_deadline = row.select_one("td:last-child")
+
+                if td_name and td_value and td_deadline: # 特に「募集案内中」の表示が出ていたら
                     item = {
                         "name": td_name.get_text(strip=True),
-                        "value": td_value.get_text(strip=True),
+                        "deadline": td_deadline.get_text(strip=True),
                         "link": td_name.find("a")["href"] if td_name.find("a") else None
                     }
                     new_data.append(item)
