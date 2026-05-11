@@ -2,6 +2,8 @@ import httpx
 from bs4 import BeautifulSoup
 import json
 import os
+import re
+from datetime import datetime
 
 def scrape_all_tables():
     url = "https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/"
@@ -40,9 +42,26 @@ def scrape_all_tables():
                 td_deadline = row.select_one("td:last-child")
 
                 if td_name and td_value and td_deadline: # 特に「募集案内中」の表示が出ていたら
+                    raw_deadline = td_deadline.get_text(strip=True)
+                    
+                    deadline_iso = None
+                    date_match = re.search(r'(20\d{2})年(\d{1,2})月(\d{1,2})日', raw_deadline)
+                    if date_match:
+                        year, month, day = map(int, date_match.groups())
+                        time_match = re.search(r'(\d{1,2})[:：](\d{2})', raw_deadline)
+                        if time_match:
+                            hour, minute = map(int, time_match.groups())
+                        else:
+                            hour, minute = 23, 59
+                        try:
+                            deadline_iso = datetime(year, month, day, hour, minute).isoformat()
+                        except ValueError:
+                            pass
+
                     item = {
                         "name": td_name.get_text(strip=True),
-                        "deadline": td_deadline.get_text(strip=True),
+                        "deadline": raw_deadline,
+                        "deadline_datetime": deadline_iso,
                         "link": td_name.find("a")["href"] if td_name.find("a") else None
                     }
                     new_data.append(item)
