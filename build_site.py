@@ -57,6 +57,17 @@ def generate_html():
     <ul>
 """
 
+    def get_deadline_sort_key(item):
+        deadline_iso = item.get("deadline_datetime")
+        if deadline_iso:
+            try:
+                return datetime.fromisoformat(deadline_iso)
+            except ValueError:
+                pass
+        return datetime.max
+
+    data.sort(key=get_deadline_sort_key)
+
     for item in data:
         deadline_iso = item.get("deadline_datetime")
         if deadline_iso:
