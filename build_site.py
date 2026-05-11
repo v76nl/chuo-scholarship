@@ -70,11 +70,20 @@ def generate_html():
 
     for item in data:
         deadline_iso = item.get("deadline_datetime")
+        deadline_style = ""
         if deadline_iso:
             try:
                 deadline_dt = datetime.fromisoformat(deadline_iso)
-                if deadline_dt < datetime.now():
+                now = datetime.now()
+                if deadline_dt < now:
                     continue
+                
+                days_left = (deadline_dt - now).days
+                if 0 <= days_left <= 14:
+                    s = max(40, 100 - (days_left * 4))
+                    l = min(65, 50 + days_left)
+                    font_weight = "bold" if days_left <= 7 else "normal"
+                    deadline_style = f"color: hsl(350, {s}%, {l}%); font-weight: {font_weight};"
             except ValueError:
                 pass
 
@@ -83,7 +92,8 @@ def generate_html():
         link = item.get("link", "#")
         deadline = item.get("deadline", "-")
         
-        html_content += f'        <li><a href="{link}" target="_blank">{name}</a><br><span class="deadline">{deadline}</span></li>\n'
+        span_attr = f' class="deadline" style="{deadline_style}"' if deadline_style else ' class="deadline"'
+        html_content += f'        <li><a href="{link}" target="_blank">{name}</a><br><span{span_attr}>{deadline}</span></li>\n'
 
     html_content += """    </ul>
 </body>
