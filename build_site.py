@@ -41,10 +41,17 @@ def generate_html():
         }}
         a {{ color: #007bff; text-decoration: none; font-weight: bold; }}
         .value {{ color: #d9534f; margin-left: 10px; font-weight: bold; }}
+        .description {{ background: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9em; line-height: 1.5; }}
+        .description p {{ margin: 5px 0; }}
     </style>
 </head>
 <body>
     <h1>中央大学 奨学金情報リスト</h1>
+    <div class="description">
+        <p>このサイトは、中央大学の民間団体・地方公共団体奨学金情報をわかりやすく一覧表示するための非公式サイトです。</p>
+        <p>元のWebサイト: <a href="https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/" target="_blank">民間団体・地方公共団体奨学金 | 中央大学</a></p>
+        <p>開発者: wash (GitHub: <a href="https://github.com/v76nl/chuo-scholarship" target="_blank">v76nl/chuo-scholarship</a>)</p>
+    </div>
     <ul>
 """
 
