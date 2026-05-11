@@ -43,7 +43,7 @@ def scrape_all_tables():
 
                 if td_name and td_value and td_deadline: # 特に「募集案内中」の表示が出ていたら
                     raw_deadline = td_deadline.get_text(strip=True)
-                    raw_deadline = raw_deadline.replace('（', '(').replace('）', ')')
+                    raw_deadline = raw_deadline.replace('（', '(').replace('）', ')') # 括弧を半角に統一
                     
                     deadline_iso = None
                     date_match = re.search(r'(20\d{2})年(\d{1,2})月(\d{1,2})日', raw_deadline)
