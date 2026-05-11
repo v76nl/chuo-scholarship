@@ -46,9 +46,16 @@ def scrape_all_tables():
                     raw_deadline = raw_deadline.replace('（', '(').replace('）', ')') # 括弧を半角に統一
                     
                     deadline_iso = None
-                    date_match = re.search(r'(20\d{2})年(\d{1,2})月(\d{1,2})日', raw_deadline)
-                    if date_match:
-                        year, month, day = map(int, date_match.groups())
+                    date_matches = list(re.finditer(r'(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日', raw_deadline))
+                    if date_matches:
+                        last_match = date_matches[-1]
+                        year_str = last_match.group(1)
+                        if not year_str:
+                            year_search = re.search(r'(20\d{2})年', raw_deadline)
+                            year_str = year_search.group(1) if year_search else "2026"
+                        year = int(year_str)
+                        month = int(last_match.group(2))
+                        day = int(last_match.group(3))
                         time_match = re.search(r'(\d{1,2})[:：](\d{2})', raw_deadline)
                         if time_match:
                             hour, minute = map(int, time_match.groups())
