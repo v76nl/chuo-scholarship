@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 def generate_html():
     json_file = "data.json"
@@ -56,6 +57,15 @@ def generate_html():
 """
 
     for item in data:
+        deadline_iso = item.get("deadline_datetime")
+        if deadline_iso:
+            try:
+                deadline_dt = datetime.fromisoformat(deadline_iso)
+                if deadline_dt < datetime.now():
+                    continue
+            except ValueError:
+                pass
+
         name = item.get("name", "名称不明")
         name = name.replace("一般財団法人", "").replace("公益財団法人", "")
         link = item.get("link", "#")
