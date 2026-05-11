@@ -50,6 +50,7 @@ def generate_html():
 
     for item in data:
         name = item.get("name", "名称不明")
+        name = name.replace("一般財団法人", "").replace("公益財団法人", "")
         link = item.get("link", "#")
         deadline = item.get("deadline", "-")
         
