@@ -80,10 +80,12 @@ def generate_html():
                 
                 days_left = (deadline_dt - now).days
                 if 0 <= days_left <= 14:
-                    s = max(40, 100 - (days_left * 4))
-                    l = min(65, 50 + days_left)
+                    ratio = days_left / 14.0
+                    r = int(255 - ratio * 204)
+                    g = int(ratio * 51)
+                    b = int(ratio * 51)
                     font_weight = "bold" if days_left <= 7 else "normal"
-                    deadline_style = f"color: hsl(350, {s}%, {l}%); font-weight: {font_weight};"
+                    deadline_style = f"color: rgb({r}, {g}, {b}); font-weight: {font_weight};"
             except ValueError:
                 pass
 
