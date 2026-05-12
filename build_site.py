@@ -50,9 +50,10 @@ def generate_html():
 <body>
     <h1>中央大学 奨学金情報リスト</h1>
     <div class="description">
-        <p>このサイトは、中央大学の民間団体・地方公共団体奨学金情報をわかりやすく一覧表示するための非公式サイトです。<br />元となる大学のWebサイトに対し開発者が操作を加えているため、使用にあたっては<strong>必ず一次情報を参照</strong>するようにしてください。</p>
+        <p>このサイトは、中央大学が掲載している民間団体・地方公共団体奨学金情報をわかりやすく掲示するための非公式サイトです。<br />元となる大学のWebサイトに対し開発者が操作を加えているため、使用にあたっては<strong>必ず一次情報を参照</strong>するようにしてください。</p>
         <p>元のWebサイト: <a href="https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/" target="_blank">民間団体・地方公共団体奨学金 | 中央大学</a></p>
-        <p>開発者: wash (学籍番号: 25Gxxxxxxxx / GitHub: <a href="https://github.com/v76nl/chuo-scholarship" target="_blank">v76nl/chuo-scholarship</a>)</p>
+        <p>開発者: <a href="https://v76nl.github.io/" target="_blank">wash</a></p>
+        <p>GitHub: <a href="https://github.com/v76nl/chuo-scholarship" target="_blank">v76nl/chuo-scholarship</a></p>
     </div>
     <ul>
 """
