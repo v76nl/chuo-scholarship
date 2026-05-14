@@ -45,10 +45,12 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data.json
+          git add data.json index.html
           if ! git diff --cached --exit-code; then
-            git commit -m "chore: update data.json"
+            git commit -m "chore: update data and build website"
             git push
+          else
+            echo "No changes in data or html"
           fi
 
       - name: Setup Pages
