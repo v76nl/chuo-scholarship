@@ -114,12 +114,12 @@ def generate_html():
         
         # 一次情報へのジャンプ用リンク
         source_url = f"https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/#:~:text={urllib.parse.quote(full_name)}"
-        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="background-color: #6c757d; margin-right: 10px;">一次情報</a>'
+        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="background-color: #6c757d; margin-right: 10px;">大学サイト内リンク</a>'
 
         if not link or link == "None" or link == "#":
-            btn_html = f'<a class="btn disabled">公式HP</a>'
+            btn_html = f'<a class="btn disabled">奨学金公式サイト</a>'
         else:
-            btn_html = f'<a href="{link}" class="btn" target="_blank">公式HP</a>'
+            btn_html = f'<a href="{link}" class="btn" target="_blank">奨学金公式サイト</a>'
 
         html_content += f'        <li><span class="name">{display_name}</span><span{span_attr}>{deadline}</span><br>{source_btn}{btn_html}</li>\n'
 
