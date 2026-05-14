@@ -66,8 +66,9 @@ def scrape_all_tables():
                         except ValueError:
                             pass
 
+                    full_name = td_name.get_text(strip=True)
                     item = {
-                        "name": td_name.get_text(strip=True),
+                        "name": full_name,
                         "deadline": raw_deadline,
                         "deadline_datetime": deadline_iso,
                         "link": td_name.find("a")["href"] if td_name.find("a") else None
