@@ -115,7 +115,7 @@ def generate_html():
         # 一次情報へのジャンプ用リンク (募集案内中-, を接頭辞に付加して精度を向上)
         prefix = urllib.parse.quote("募集\n案内中")
         source_url = f"https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/#:~:text={prefix}-,{urllib.parse.quote(full_name)}"
-        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="background-color: #6c757d; margin-right: 10px;">大学のサイトを確認</a>'
+        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="margin-right: 10px;">大学のサイトを確認</a>'
 
         if not link or link == "None" or link == "#":
             btn_html = f'<a class="btn disabled">奨学金公式サイトを確認</a>'
