@@ -66,7 +66,7 @@ def scrape_all_tables():
                         except ValueError:
                             pass
 
-                    full_name = td_name.get_text(strip=True)
+                    full_name = td_name.get_text(separator="\n", strip=True)
                     item = {
                         "name": full_name,
                         "deadline": raw_deadline,

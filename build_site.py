@@ -106,20 +106,21 @@ def generate_html():
                 pass
 
         full_name = item.get("name", "名称不明")
-        display_name = full_name.replace("一般財団法人", "").replace("公益財団法人", "")
+        display_name = full_name.replace("一般財団法人", "").replace("公益財団法人", "").replace("\n", " ").strip()
         link = item.get("link", "#")
         deadline = item.get("deadline", "-")
         
         span_attr = f' class="deadline" style="{deadline_style}"' if deadline_style else ' class="deadline"'
         
-        # 一次情報へのジャンプ用リンク
-        source_url = f"https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/#:~:text={urllib.parse.quote(full_name)}"
-        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="background-color: #6c757d; margin-right: 10px;">大学サイト内リンク</a>'
+        # 一次情報へのジャンプ用リンク (募集案内中-, を接頭辞に付加して精度を向上)
+        prefix = urllib.parse.quote("募集\n案内中")
+        source_url = f"https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/#:~:text={prefix}-,{urllib.parse.quote(full_name)}"
+        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="background-color: #6c757d; margin-right: 10px;">一次情報</a>'
 
         if not link or link == "None" or link == "#":
-            btn_html = f'<a class="btn disabled">奨学金公式サイト</a>'
+            btn_html = f'<a class="btn disabled">公式HP</a>'
         else:
-            btn_html = f'<a href="{link}" class="btn" target="_blank">奨学金公式サイト</a>'
+            btn_html = f'<a href="{link}" class="btn" target="_blank">公式HP</a>'
 
         html_content += f'        <li><span class="name">{display_name}</span><span{span_attr}>{deadline}</span><br>{source_btn}{btn_html}</li>\n'
 
