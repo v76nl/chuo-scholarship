@@ -48,7 +48,9 @@ def generate_html():
         strong {{ color: red; }}
         .name {{ font-weight: bold; font-size: 1.1em; margin-right: 15px; }}
         .btn {{
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-top: 10px;
             padding: 8px 16px;
             background-color: #007bff;
@@ -58,6 +60,7 @@ def generate_html():
             font-size: 0.9em;
             transition: background-color 0.2s;
         }}
+        .btn svg {{ width: 16px; height: 16px; }}
         .btn:hover {{ background-color: #0056b3; }}
         .btn.disabled {{ background-color: #cccccc; pointer-events: none; color: #666; }}
     </style>
@@ -115,12 +118,13 @@ def generate_html():
         # 一次情報へのジャンプ用リンク (募集案内中-, を接頭辞に付加して精度を向上)
         prefix = urllib.parse.quote("募集\n案内中")
         source_url = f"https://www.chuo-u.ac.jp/campuslife/scholarship/list/private/#:~:text={prefix}-,{urllib.parse.quote(full_name)}"
-        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="margin-right: 10px;">大学のサイトを確認</a>'
+        external_icon = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
+        source_btn = f'<a href="{source_url}" class="btn" target="_blank" style="margin-right: 10px;">{external_icon}大学のサイトを確認</a>'
 
         if not link or link == "None" or link == "#":
-            btn_html = f'<a class="btn disabled">奨学金公式サイトを確認</a>'
+            btn_html = f'<a class="btn disabled">{external_icon}奨学金公式サイトを確認</a>'
         else:
-            btn_html = f'<a href="{link}" class="btn" target="_blank">奨学金公式サイトを確認</a>'
+            btn_html = f'<a href="{link}" class="btn" target="_blank">{external_icon}奨学金公式サイトを確認</a>'
 
         html_content += f'        <li><span class="name">{display_name}</span><span{span_attr}>{deadline}</span><br>{source_btn}{btn_html}</li>\n'
 
