@@ -45,6 +45,20 @@ def generate_html():
         .description {{ background: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9em; line-height: 1.5; }}
         .description p {{ margin: 5px 0; }}
         strong {{ color: red; }}
+        .name {{ font-weight: bold; font-size: 1.1em; margin-right: 15px; }}
+        .btn {{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }}
+        .btn:hover {{ background-color: #0056b3; }}
+        .btn.disabled {{ background-color: #cccccc; pointer-events: none; color: #666; }}
     </style>
 </head>
 <body>
@@ -96,7 +110,13 @@ def generate_html():
         deadline = item.get("deadline", "-")
         
         span_attr = f' class="deadline" style="{deadline_style}"' if deadline_style else ' class="deadline"'
-        html_content += f'        <li><a href="{link}" target="_blank">{name}</a><br><span{span_attr}>{deadline}</span></li>\n'
+        
+        if not link or link == "None" or link == "#":
+            btn_html = f'<a class="btn disabled">公式HP</a>'
+        else:
+            btn_html = f'<a href="{link}" class="btn" target="_blank">公式HP</a>'
+
+        html_content += f'        <li><span class="name">{name}</span><span{span_attr}>{deadline}</span><br>{btn_html}</li>\n'
 
     html_content += """    </ul>
 </body>

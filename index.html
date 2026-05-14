@@ -28,6 +28,20 @@
         .description { background: #e9ecef; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9em; line-height: 1.5; }
         .description p { margin: 5px 0; }
         strong { color: red; }
+        .name { font-weight: bold; font-size: 1.1em; margin-right: 15px; }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+        .btn:hover { background-color: #0056b3; }
+        .btn.disabled { background-color: #cccccc; pointer-events: none; color: #666; }
     </style>
 </head>
 <body>
@@ -39,56 +53,53 @@
         <p>GitHub: <a href="https://github.com/v76nl/chuo-scholarship" target="_blank">v76nl/chuo-scholarship</a></p>
     </div>
     <ul>
-        <li><a href="https://yw-memorial.jp/" target="_blank">渡辺与八郎記念財団</a><br><span class="deadline" style="color: rgb(255, 0, 0); font-weight: bold;">2026年5月12日(火)必着</span></li>
-        <li><a href="https://tobe-maki.or.jp/" target="_blank">戸部眞紀財団</a><br><span class="deadline" style="color: rgb(255, 0, 0); font-weight: bold;">Web出願：2026年5月8日(金)23：59迄郵送：2026年5月12日(火)必着</span></li>
-        <li><a href="https://www.kitanozaidan.or.jp/index.html" target="_blank">北野生涯教育振興会【ライフシフト 奨学金】</a><br><span class="deadline" style="color: rgb(240, 3, 3); font-weight: bold;">2026年5月13日(水)必着</span></li>
-        <li><a href="None" target="_blank">平山教育財団</a><br><span class="deadline" style="color: rgb(225, 7, 7); font-weight: bold;">2026年5月14日(木)必着</span></li>
-        <li><a href="https://foundation.midgroup.co.jp/" target="_blank">MID財団</a><br><span class="deadline" style="color: rgb(211, 10, 10); font-weight: bold;">2026年5月15日(金)必着</span></li>
-        <li><a href="None" target="_blank">一般社団法人三和酒類地域文化振興会</a><br><span class="deadline" style="color: rgb(211, 10, 10); font-weight: bold;">2026年5月15日(金)必着</span></li>
-        <li><a href="https://www.takano-zaidan.com/" target="_blank">鷹野学術振興財団</a><br><span class="deadline" style="color: rgb(211, 10, 10); font-weight: bold;">2026年4月1日(水)～5月15日(金)必着</span></li>
-        <li><a href="http://www.nittsu-ikueikai.or.jp/" target="_blank">日本通運育英会</a><br><span class="deadline" style="color: rgb(211, 10, 10); font-weight: bold;">2026年4月1日(水)～5月15日(金)必着</span></li>
-        <li><a href="http://www.omorishozo.or.jp/" target="_blank">大森昌三記念財団</a><br><span class="deadline" style="color: rgb(167, 21, 21); font-weight: bold;">2026年5月18日(月)都心学生生活課必着</span></li>
-        <li><a href="https://yonehama-rh-found.or.jp/index.html" target="_blank">米濵・リンガーハット財団</a><br><span class="deadline" style="color: rgb(167, 21, 21); font-weight: bold;">2026年5月18日(月)必着</span></li>
-        <li><a href="None" target="_blank">アキレス育英会</a><br><span class="deadline" style="color: rgb(167, 21, 21); font-weight: bold;">2026年5月18日(月)必着</span></li>
-        <li><a href="http://www.jees.or.jp/" target="_blank">日本国際教育支援協会【JEES日本語教育普及奨学金】</a><br><span class="deadline" style="color: rgb(153, 25, 25); font-weight: bold;">2026年5月19日(火)17：00必着※出願書類をメールにて提出</span></li>
-        <li><a href="https://www.ashinaga.org/" target="_blank">あしなが育英会</a><br><span class="deadline" style="color: rgb(138, 29, 29); font-weight: normal;">2026年5月20日(水)必着</span></li>
-        <li><a href="https://www.kao-foundation.or.jp/scholarship/yukei/" target="_blank">花王 芸術・科学財団</a><br><span class="deadline" style="color: rgb(109, 36, 36); font-weight: normal;">2026年5月22日(金)16：00迄</span></li>
-        <li><a href="http://kawamura-ikueikai.or.jp/" target="_blank">川村育英会</a><br><span class="deadline" style="color: rgb(109, 36, 36); font-weight: normal;">2026年5月22日(金)都心学生生活課必着</span></li>
-        <li><a href="https://kawamura-ikueikai.or.jp/" target="_blank">川村育英会</a><br><span class="deadline" style="color: rgb(109, 36, 36); font-weight: normal;">2026年5月22日(金)都心学生生活課必着</span></li>
-        <li><a href="https://www.netjpc.com/company/scholarship/index.html" target="_blank">JPC奨学財団</a><br><span class="deadline">2026年5月29日(金)</span></li>
-        <li><a href="http://kotobukizaidan.org/" target="_blank">寿財団</a><br><span class="deadline">2026年5月29日(金)必着</span></li>
-        <li><a href="http://www.kokorozashi-foundation.or.jp/" target="_blank">志・建設技術人材育成財団</a><br><span class="deadline">2026年5月30日(土)必着</span></li>
-        <li><a href="https://aoki-keiiku.org/" target="_blank">青木仁志啓育財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.iyasaka-zaidan.org/" target="_blank">いやさか財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://lpc-foundation.org/" target="_blank">LPC Foundation</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://aucnet-foundation.org/" target="_blank">オークネット財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.okamotofoundation.org/" target="_blank">岡本教育財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.kasezaidan.org/" target="_blank">加瀬不動産活用振興財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://kamijo-ikuei.org/" target="_blank">上條育英財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.kawajiri-foundation.org/" target="_blank">KAWAJIRI　FOUNDATION【川㞍育英奨学金】</a><br><span class="deadline">2026年5月31日(月)必着</span></li>
-        <li><a href="https://www.kinoshitamirai-foundation.org/" target="_blank">きのした未来財団</a><br><span class="deadline">2026年5月31日(月)必着</span></li>
-        <li><a href="https://kubo-zaidan.org/" target="_blank">久保教育文化財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://kuroki-foundation.org/shogakukin/" target="_blank">KUROKI FOUNDATION</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://kshouse-foundation.org/" target="_blank">ケイズハウス財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="http://kyoikukai.net/syogakukin.html" target="_blank">在日本朝鮮人教育会中央常任理事会</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.sugiyama-zaidan.org/" target="_blank">杉山奨学財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.tanakatakanori-zaidan.org/index.html" target="_blank">田中孝典記念教育財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.nomurayoshimitsu-zaidan.org/" target="_blank">野村芳光財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://fukagawa-zaidan.org/" target="_blank">深川真マリモ奨学財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.fujioka-educationalfoundation.org/privacy-policy" target="_blank">藤岡記念教育財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.moriyamafoundation.org/" target="_blank">森山財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="http://yamamura-scholarship.org/index.html" target="_blank">山村章奨学財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://www.unionzaidan.or.jp/" target="_blank">ユニオン奨学財団</a><br><span class="deadline">2026年5月31日(日)財団必着</span></li>
-        <li><a href="https://www.wada-zaidan.org/" target="_blank">和田財団</a><br><span class="deadline">2026年5月31日(日)必着</span></li>
-        <li><a href="https://maruwa-foundation.or.jp/" target="_blank">和佐見丸和財団</a><br><span class="deadline">2026年6月3日(水)必着</span></li>
-        <li><a href="https://maruwa-foundation.or.jp/" target="_blank">和佐見丸和財団【スポーツ活動奨学生】</a><br><span class="deadline">2026年6月3日(水)必着</span></li>
-        <li><a href="https://hara-kagaku.org/" target="_blank">原・フルタイムシステム科学技術振興財団</a><br><span class="deadline">2026年6月10日(水)必着</span></li>
-        <li><a href="https://www.kao-foundation.or.jp/scholarship/crescent-award/" target="_blank">花王芸術・科学財団</a><br><span class="deadline">2026年6月19日(金)16：00迄</span></li>
-        <li><a href="http://geibi-kyoukai.com/" target="_blank">芸備協会</a><br><span class="deadline">2026年6月19日(金)必着</span></li>
-        <li><a href="https://shimada-mirai.org/scholarships/" target="_blank">シマダ未来財団</a><br><span class="deadline">2026年6月30日(火)必着</span></li>
-        <li><a href="https://www.tamashin.or.jp/scholarship" target="_blank">公共財団法人たましん地域文化財団【多摩未来奨学金】</a><br><span class="deadline">2026年6月30日(火)必着※書類発送連絡のメール送信要</span></li>
-        <li><a href="https://fushimi.tokyo/" target="_blank">伏見記念財団</a><br><span class="deadline">2026年6月30日(火)必着</span></li>
-        <li><a href="http://www.kotsuiji.com" target="_blank">交通遺児育英会</a><br><span class="deadline">2026年10月31日(土)必着</span></li>
+        <li><span class="name">平山教育財団</span><span class="deadline" style="color: rgb(255, 0, 0); font-weight: bold;">2026年5月14日(木)必着</span><br><a class="btn disabled">公式HP</a></li>
+        <li><span class="name">MID財団</span><span class="deadline" style="color: rgb(240, 3, 3); font-weight: bold;">2026年5月15日(金)必着</span><br><a href="https://foundation.midgroup.co.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">一般社団法人三和酒類地域文化振興会</span><span class="deadline" style="color: rgb(240, 3, 3); font-weight: bold;">2026年5月15日(金)必着</span><br><a class="btn disabled">公式HP</a></li>
+        <li><span class="name">鷹野学術振興財団</span><span class="deadline" style="color: rgb(240, 3, 3); font-weight: bold;">2026年4月1日(水)～5月15日(金)必着</span><br><a href="https://www.takano-zaidan.com/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">日本通運育英会</span><span class="deadline" style="color: rgb(240, 3, 3); font-weight: bold;">2026年4月1日(水)～5月15日(金)必着</span><br><a href="http://www.nittsu-ikueikai.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">大森昌三記念財団</span><span class="deadline" style="color: rgb(196, 14, 14); font-weight: bold;">2026年5月18日(月)都心学生生活課必着</span><br><a href="http://www.omorishozo.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">米濵・リンガーハット財団</span><span class="deadline" style="color: rgb(196, 14, 14); font-weight: bold;">2026年5月18日(月)必着</span><br><a href="https://yonehama-rh-found.or.jp/index.html" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">アキレス育英会</span><span class="deadline" style="color: rgb(196, 14, 14); font-weight: bold;">2026年5月18日(月)必着</span><br><a class="btn disabled">公式HP</a></li>
+        <li><span class="name">日本国際教育支援協会【JEES日本語教育普及奨学金】</span><span class="deadline" style="color: rgb(182, 18, 18); font-weight: bold;">2026年5月19日(火)17：00必着※出願書類をメールにて提出</span><br><a href="http://www.jees.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">あしなが育英会</span><span class="deadline" style="color: rgb(167, 21, 21); font-weight: bold;">2026年5月20日(水)必着</span><br><a href="https://www.ashinaga.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">花王 芸術・科学財団</span><span class="deadline" style="color: rgb(138, 29, 29); font-weight: normal;">2026年5月22日(金)16：00迄</span><br><a href="https://www.kao-foundation.or.jp/scholarship/yukei/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">川村育英会</span><span class="deadline" style="color: rgb(138, 29, 29); font-weight: normal;">2026年5月22日(金)都心学生生活課必着</span><br><a href="http://kawamura-ikueikai.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">川村育英会</span><span class="deadline" style="color: rgb(138, 29, 29); font-weight: normal;">2026年5月22日(金)都心学生生活課必着</span><br><a href="https://kawamura-ikueikai.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">JPC奨学財団</span><span class="deadline">2026年5月29日(金)</span><br><a href="https://www.netjpc.com/company/scholarship/index.html" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">寿財団</span><span class="deadline">2026年5月29日(金)必着</span><br><a href="http://kotobukizaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">志・建設技術人材育成財団</span><span class="deadline">2026年5月30日(土)必着</span><br><a href="http://www.kokorozashi-foundation.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">青木仁志啓育財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://aoki-keiiku.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">いやさか財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.iyasaka-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">LPC Foundation</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://lpc-foundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">オークネット財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://aucnet-foundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">岡本教育財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.okamotofoundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">加瀬不動産活用振興財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.kasezaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">上條育英財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://kamijo-ikuei.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">KAWAJIRI　FOUNDATION【川㞍育英奨学金】</span><span class="deadline">2026年5月31日(月)必着</span><br><a href="https://www.kawajiri-foundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">きのした未来財団</span><span class="deadline">2026年5月31日(月)必着</span><br><a href="https://www.kinoshitamirai-foundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">久保教育文化財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://kubo-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">KUROKI FOUNDATION</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://kuroki-foundation.org/shogakukin/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">ケイズハウス財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://kshouse-foundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">在日本朝鮮人教育会中央常任理事会</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="http://kyoikukai.net/syogakukin.html" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">杉山奨学財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.sugiyama-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">田中孝典記念教育財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.tanakatakanori-zaidan.org/index.html" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">野村芳光財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.nomurayoshimitsu-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">深川真マリモ奨学財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://fukagawa-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">藤岡記念教育財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.fujioka-educationalfoundation.org/privacy-policy" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">森山財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.moriyamafoundation.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">山村章奨学財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="http://yamamura-scholarship.org/index.html" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">ユニオン奨学財団</span><span class="deadline">2026年5月31日(日)財団必着</span><br><a href="https://www.unionzaidan.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">和田財団</span><span class="deadline">2026年5月31日(日)必着</span><br><a href="https://www.wada-zaidan.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">和佐見丸和財団</span><span class="deadline">2026年6月3日(水)必着</span><br><a href="https://maruwa-foundation.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">和佐見丸和財団【スポーツ活動奨学生】</span><span class="deadline">2026年6月3日(水)必着</span><br><a href="https://maruwa-foundation.or.jp/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">原・フルタイムシステム科学技術振興財団</span><span class="deadline">2026年6月10日(水)必着</span><br><a href="https://hara-kagaku.org/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">花王芸術・科学財団</span><span class="deadline">2026年6月19日(金)16：00迄</span><br><a href="https://www.kao-foundation.or.jp/scholarship/crescent-award/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">芸備協会</span><span class="deadline">2026年6月19日(金)必着</span><br><a href="http://geibi-kyoukai.com/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">シマダ未来財団</span><span class="deadline">2026年6月30日(火)必着</span><br><a href="https://shimada-mirai.org/scholarships/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">公共財団法人たましん地域文化財団【多摩未来奨学金】</span><span class="deadline">2026年6月30日(火)必着※書類発送連絡のメール送信要</span><br><a href="https://www.tamashin.or.jp/scholarship" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">伏見記念財団</span><span class="deadline">2026年6月30日(火)必着</span><br><a href="https://fushimi.tokyo/" class="btn" target="_blank">公式HP</a></li>
+        <li><span class="name">交通遺児育英会</span><span class="deadline">2026年10月31日(土)必着</span><br><a href="http://www.kotsuiji.com" class="btn" target="_blank">公式HP</a></li>
     </ul>
 </body>
 </html>
