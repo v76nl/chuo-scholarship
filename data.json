@@ -18,22 +18,16 @@
         "link": "https://kawamura-ikueikai.or.jp/"
     },
     {
-        "name": "公益財団法人\n北野生涯教育振興会\n【ライフシフト 奨学金】",
-        "deadline": "2026年5月13日(水)必着",
-        "deadline_datetime": "2026-05-13T23:59:00",
-        "link": "https://www.kitanozaidan.or.jp/index.html"
-    },
-    {
         "name": "公益財団法人\n日本国際教育支援協会\n【JEES日本語教育普及奨学金】",
         "deadline": "2026年5月19日(火)17：00必着※出願書類をメールにて提出",
         "deadline_datetime": "2026-05-19T17:00:00",
         "link": "http://www.jees.or.jp/"
     },
     {
-        "name": "公益財団法人\n平山教育財団",
-        "deadline": "2026年5月14日(木)必着",
-        "deadline_datetime": "2026-05-14T23:59:00",
-        "link": null
+        "name": "一般財団法人\n信田福祉財団",
+        "deadline": "2026年6月12日(金)必着",
+        "deadline_datetime": "2026-06-12T23:59:00",
+        "link": "http://www.shida-wf.com/"
     },
     {
         "name": "公益財団法人\n和佐見丸和財団",
@@ -48,28 +42,16 @@
         "link": "https://maruwa-foundation.or.jp/"
     },
     {
-        "name": "一般財団法人\n渡辺与八郎記念財団",
-        "deadline": "2026年5月12日(火)必着",
-        "deadline_datetime": "2026-05-12T23:59:00",
-        "link": "https://yw-memorial.jp/"
-    },
-    {
         "name": "一般財団法人\nMID財団",
         "deadline": "2026年5月15日(金)必着",
         "deadline_datetime": "2026-05-15T23:59:00",
         "link": "https://foundation.midgroup.co.jp/"
     },
     {
-        "name": "公益財団法人\n紀文・保芦記念財団",
-        "deadline": "2026年5月8日(金)都心学生生活課必着",
-        "deadline_datetime": "2026-05-08T23:59:00",
-        "link": "https://www.kibun.co.jp/kibun_foundation/scholarships.html"
-    },
-    {
-        "name": "一般財団法人\nケーオーデンタル・小坪清彦育英財団",
-        "deadline": "2026年5月8日(金)必着",
-        "deadline_datetime": "2026-05-08T23:59:00",
-        "link": "https://www.ko-kotsubo-zaidan.or.jp/boshu/"
+        "name": "一般社団法人\n唐神基金",
+        "deadline": "2026年6月16日(火)必着",
+        "deadline_datetime": "2026-06-16T23:59:00",
+        "link": null
     },
     {
         "name": "一般社団法人\n三和酒類地域文化振興会",
@@ -82,6 +64,12 @@
         "deadline": "2026年5月29日(金)",
         "deadline_datetime": "2026-05-29T23:59:00",
         "link": "https://www.netjpc.com/company/scholarship/index.html"
+    },
+    {
+        "name": "公益財団法人\n藤森科学技術振興財団",
+        "deadline": "2026年6月30日(火)都心学生生活課必着",
+        "deadline_datetime": "2026-06-30T23:59:00",
+        "link": "https://www.fujimori-f.or.jp/scholarship/requirements.html"
     },
     {
         "name": "公益財団法人\n米濵・リンガーハット財団",
@@ -102,22 +90,10 @@
         "link": "https://aoki-keiiku.org/"
     },
     {
-        "name": "公益信託\n池田育英会トラスト",
-        "deadline": "2026年5月8日(金)必着",
-        "deadline_datetime": "2026-05-08T23:59:00",
-        "link": "https://www.iyobank.co.jp/"
-    },
-    {
         "name": "公益財団法人\nいやさか財団",
         "deadline": "2026年5月31日(日)必着",
         "deadline_datetime": "2026-05-31T23:59:00",
         "link": "https://www.iyasaka-zaidan.org/"
-    },
-    {
-        "name": "公益財団法人\nエイブル文化振興財団",
-        "deadline": "Web出願：2026年5月1日(金)17：00迄郵送：2026年5月8日(金)必着",
-        "deadline_datetime": "2026-05-08T17:00:00",
-        "link": "https://www.ablefoundation.or.jp/"
     },
     {
         "name": "公益財団法人\nLPC Foundation",
@@ -232,24 +208,6 @@
         "deadline": "2026年6月30日(火)必着※書類発送連絡のメール送信要",
         "deadline_datetime": "2026-06-30T23:59:00",
         "link": "https://www.tamashin.or.jp/scholarship"
-    },
-    {
-        "name": "公益財団法人\n堤征二記念奨学財団",
-        "deadline": "2026年5月8日(金)必着",
-        "deadline_datetime": "2026-05-08T23:59:00",
-        "link": "http://www.tsutsumi-zaidan.or.jp/"
-    },
-    {
-        "name": "公益財団法人\n戸部眞紀財団",
-        "deadline": "Web出願：2026年5月8日(金)23：59迄郵送：2026年5月12日(火)必着",
-        "deadline_datetime": "2026-05-12T23:59:00",
-        "link": "https://tobe-maki.or.jp/"
-    },
-    {
-        "name": "公益財団法人\nナガワひまわり財団",
-        "deadline": "2026年5月11日(月)※Web出願",
-        "deadline_datetime": "2026-05-11T23:59:00",
-        "link": "http://www.nagawa-himawari.or.jp/"
     },
     {
         "name": "公益財団法人\n日本通運育英会",
