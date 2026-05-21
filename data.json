@@ -1,11 +1,5 @@
 [
     {
-        "name": "一般財団法人\n大森昌三記念財団",
-        "deadline": "2026年5月18日(月)都心学生生活課必着",
-        "deadline_datetime": "2026-05-18T23:59:00",
-        "link": "http://www.omorishozo.or.jp/"
-    },
-    {
         "name": "公益財団法人\n川村育英会",
         "deadline": "2026年5月22日(金)都心学生生活課必着",
         "deadline_datetime": "2026-05-22T23:59:00",
@@ -30,6 +24,12 @@
         "link": "http://www.shida-wf.com/"
     },
     {
+        "name": "公益財団法人\n長谷川財団",
+        "deadline": "2026年5月25日(月)必着",
+        "deadline_datetime": "2026-05-25T23:59:00",
+        "link": "https://www.hasegawafound.or.jp/"
+    },
+    {
         "name": "公益財団法人\n和佐見丸和財団",
         "deadline": "2026年6月3日(水)必着",
         "deadline_datetime": "2026-06-03T23:59:00",
@@ -42,21 +42,9 @@
         "link": "https://maruwa-foundation.or.jp/"
     },
     {
-        "name": "一般財団法人\nMID財団",
-        "deadline": "2026年5月15日(金)必着",
-        "deadline_datetime": "2026-05-15T23:59:00",
-        "link": "https://foundation.midgroup.co.jp/"
-    },
-    {
         "name": "一般社団法人\n唐神基金",
         "deadline": "2026年6月16日(火)必着",
         "deadline_datetime": "2026-06-16T23:59:00",
-        "link": null
-    },
-    {
-        "name": "一般社団法人\n三和酒類地域文化振興会",
-        "deadline": "2026年5月15日(金)必着",
-        "deadline_datetime": "2026-05-15T23:59:00",
         "link": null
     },
     {
@@ -70,18 +58,6 @@
         "deadline": "2026年6月30日(火)都心学生生活課必着",
         "deadline_datetime": "2026-06-30T23:59:00",
         "link": "https://www.fujimori-f.or.jp/scholarship/requirements.html"
-    },
-    {
-        "name": "公益財団法人\n米濵・リンガーハット財団",
-        "deadline": "2026年5月18日(月)必着",
-        "deadline_datetime": "2026-05-18T23:59:00",
-        "link": "https://yonehama-rh-found.or.jp/index.html"
-    },
-    {
-        "name": "公益財団法人\nアキレス育英会",
-        "deadline": "2026年5月18日(月)必着",
-        "deadline_datetime": "2026-05-18T23:59:00",
-        "link": null
     },
     {
         "name": "一般財団法人\n青木仁志啓育財団",
@@ -192,12 +168,6 @@
         "link": "https://www.sugiyama-zaidan.org/"
     },
     {
-        "name": "一般財団法人\n鷹野学術振興財団",
-        "deadline": "2026年4月1日(水)～5月15日(金)必着",
-        "deadline_datetime": "2026-05-15T23:59:00",
-        "link": "https://www.takano-zaidan.com/"
-    },
-    {
         "name": "一般財団法人\n田中孝典記念教育財団",
         "deadline": "2026年5月31日(日)必着",
         "deadline_datetime": "2026-05-31T23:59:00",
@@ -208,12 +178,6 @@
         "deadline": "2026年6月30日(火)必着※書類発送連絡のメール送信要",
         "deadline_datetime": "2026-06-30T23:59:00",
         "link": "https://www.tamashin.or.jp/scholarship"
-    },
-    {
-        "name": "公益財団法人\n日本通運育英会",
-        "deadline": "2026年4月1日(水)～5月15日(金)必着",
-        "deadline_datetime": "2026-05-15T23:59:00",
-        "link": "http://www.nittsu-ikueikai.or.jp/"
     },
     {
         "name": "公益財団法人\n野村芳光財団",
