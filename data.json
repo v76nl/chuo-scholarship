@@ -1,33 +1,9 @@
 [
     {
-        "name": "公益財団法人\n川村育英会",
-        "deadline": "2026年5月22日(金)都心学生生活課必着",
-        "deadline_datetime": "2026-05-22T23:59:00",
-        "link": "http://kawamura-ikueikai.or.jp/"
-    },
-    {
-        "name": "公益財団法人\n川村育英会",
-        "deadline": "2026年5月22日(金)都心学生生活課必着",
-        "deadline_datetime": "2026-05-22T23:59:00",
-        "link": "https://kawamura-ikueikai.or.jp/"
-    },
-    {
-        "name": "公益財団法人\n日本国際教育支援協会\n【JEES日本語教育普及奨学金】",
-        "deadline": "2026年5月19日(火)17：00必着※出願書類をメールにて提出",
-        "deadline_datetime": "2026-05-19T17:00:00",
-        "link": "http://www.jees.or.jp/"
-    },
-    {
         "name": "一般財団法人\n信田福祉財団",
         "deadline": "2026年6月12日(金)必着",
         "deadline_datetime": "2026-06-12T23:59:00",
         "link": "http://www.shida-wf.com/"
-    },
-    {
-        "name": "公益財団法人\n長谷川財団",
-        "deadline": "2026年5月25日(月)必着",
-        "deadline_datetime": "2026-05-25T23:59:00",
-        "link": "https://www.hasegawafound.or.jp/"
     },
     {
         "name": "公益財団法人\n和佐見丸和財団",
@@ -180,6 +156,12 @@
         "link": "https://www.tamashin.or.jp/scholarship"
     },
     {
+        "name": "公益財団法人\n富山文化財団",
+        "deadline": "2026年7月16日(木)AM10:00締切※web出願",
+        "deadline_datetime": "2026-07-16T10:00:00",
+        "link": "http://www.tomiyama-cf.or.jp/"
+    },
+    {
         "name": "公益財団法人\n野村芳光財団",
         "deadline": "2026年5月31日(日)必着",
         "deadline_datetime": "2026-05-31T23:59:00",
@@ -238,18 +220,6 @@
         "deadline": "2026年10月31日(土)必着",
         "deadline_datetime": "2026-10-31T23:59:00",
         "link": "http://www.kotsuiji.com"
-    },
-    {
-        "name": "一般財団法人\nあしなが育英会",
-        "deadline": "2026年5月20日(水)必着",
-        "deadline_datetime": "2026-05-20T23:59:00",
-        "link": "https://www.ashinaga.org/"
-    },
-    {
-        "name": "公益財団法人\n花王 芸術・科学財団",
-        "deadline": "2026年5月22日(金)16：00迄",
-        "deadline_datetime": "2026-05-22T16:00:00",
-        "link": "https://www.kao-foundation.or.jp/scholarship/yukei/"
     },
     {
         "name": "公益財団法人\n芸備協会",
