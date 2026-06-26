@@ -1,27 +1,21 @@
 [
     {
-        "name": "一般財団法人\n信田福祉財団",
-        "deadline": "2026年6月12日(金)必着",
-        "deadline_datetime": "2026-06-12T23:59:00",
-        "link": "http://www.shida-wf.com/"
-    },
-    {
-        "name": "一般社団法人\n唐神基金",
-        "deadline": "2026年6月16日(火)必着",
-        "deadline_datetime": "2026-06-16T23:59:00",
-        "link": null
-    },
-    {
         "name": "公益財団法人\n藤森科学技術振興財団",
         "deadline": "2026年6月30日(火)都心学生生活課必着",
         "deadline_datetime": "2026-06-30T23:59:00",
         "link": "https://www.fujimori-f.or.jp/scholarship/requirements.html"
     },
     {
-        "name": "公益財団法人\n花王芸術・科学財団",
-        "deadline": "2026年6月19日(金)16：00迄",
-        "deadline_datetime": "2026-06-19T16:00:00",
-        "link": "https://www.kao-foundation.or.jp/scholarship/crescent-award/"
+        "name": "公益財団法人\nキーエンス財団\n【貸与奨学金返還支援】",
+        "deadline": "2026年11月20日(金)午前10時※web登録",
+        "deadline_datetime": "2026-11-20T23:59:00",
+        "link": "https://www.keyence-foundation.or.jp/"
+    },
+    {
+        "name": "公益財団法人\nキーエンス財団\n【大学院（修士課程）奨学生】",
+        "deadline": "2026年11月20日(金)午前10時※web登録",
+        "deadline_datetime": "2026-11-20T23:59:00",
+        "link": "https://www.keyence-foundation.or.jp/scholarship04/"
     },
     {
         "name": "一般財団法人\nシマダ未来財団",
@@ -42,12 +36,6 @@
         "link": "http://www.tomiyama-cf.or.jp/"
     },
     {
-        "name": "公益財団法人\n原・フルタイムシステム科学技術振興財団",
-        "deadline": "2026年6月10日(水)必着",
-        "deadline_datetime": "2026-06-10T23:59:00",
-        "link": "https://hara-kagaku.org/"
-    },
-    {
         "name": "公益財団法人\n伏見記念財団",
         "deadline": "2026年6月30日(火)必着",
         "deadline_datetime": "2026-06-30T23:59:00",
@@ -58,11 +46,5 @@
         "deadline": "2026年10月31日(土)必着",
         "deadline_datetime": "2026-10-31T23:59:00",
         "link": "http://www.kotsuiji.com"
-    },
-    {
-        "name": "公益財団法人\n芸備協会",
-        "deadline": "2026年6月19日(金)必着",
-        "deadline_datetime": "2026-06-19T23:59:00",
-        "link": "http://geibi-kyoukai.com/"
     }
 ]
