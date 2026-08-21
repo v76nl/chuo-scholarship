@@ -1,11 +1,5 @@
 [
     {
-        "name": "一般財団法人\nオカノ電気財団",
-        "deadline": "2026年8月15日(土)必着",
-        "deadline_datetime": "2026-08-15T23:59:00",
-        "link": "https://okanodenki.org/"
-    },
-    {
         "name": "一般財団法人\n鎌田記念財団",
         "deadline": "2026年8月31日(月)必着",
         "deadline_datetime": "2026-08-31T23:59:00",
@@ -34,5 +28,17 @@
         "deadline": "2026年10月31日(土)必着",
         "deadline_datetime": "2026-10-31T23:59:00",
         "link": "http://www.kotsuiji.com"
+    },
+    {
+        "name": "一般財団法人\nﾉｼﾞﾏ出る杭財団",
+        "deadline": "2026年9月30日(水)23:59迄にweb登録",
+        "deadline_datetime": "2026-09-30T23:59:00",
+        "link": "https://derukui.nojima.co.jp/"
+    },
+    {
+        "name": "公益財団法人\n沖縄県　国際交流・人材育成財団",
+        "deadline": "2026年10月2日(金)17：15必着",
+        "deadline_datetime": "2026-10-02T17:15:00",
+        "link": "http://www.oihf.or.jp/"
     }
 ]
