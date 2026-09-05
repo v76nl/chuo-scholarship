@@ -1,5 +1,11 @@
 [
     {
+        "name": "公益財団法人\nPHOENIX",
+        "deadline": "2026年10月30日(金)必着",
+        "deadline_datetime": "2026-10-30T23:59:00",
+        "link": "https://www.phoenixfound.or.jp/"
+    },
+    {
         "name": "公益財団法人\n岩佐教育文化財団",
         "deadline": "2026年11月6日(金)消印有効",
         "deadline_datetime": "2026-11-06T23:59:00",
@@ -40,6 +46,18 @@
         "deadline": "作品投稿期間2027年1月31日(日)",
         "deadline_datetime": "2027-01-31T23:59:00",
         "link": "https://sasakitaijuikueikai.or.jp/"
+    },
+    {
+        "name": "佐々木洋寧奨学財団",
+        "deadline": "2026年9月30日(水)必着",
+        "deadline_datetime": "2026-09-30T23:59:00",
+        "link": "https://h-sasaki.org/"
+    },
+    {
+        "name": "一般財団法人\nMAICOMひとり暮らし学生奨学財団\n＜二次募集＞",
+        "deadline": "2026年10月9日(金)消印有効",
+        "deadline_datetime": "2026-10-09T23:59:00",
+        "link": "https://www.maicom-htr-zaidan.or.jp/"
     },
     {
         "name": "公益財団法人\n交通遺児育英会",
